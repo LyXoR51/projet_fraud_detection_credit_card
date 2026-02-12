@@ -8,5 +8,5 @@ app_port: 8501
 tags:
 - streamlit
 pinned: false
-short_description: ' Automatic fraud detection from realtime API'
+short_description: 'Automatic fraud detection from realtime API'
 ---
