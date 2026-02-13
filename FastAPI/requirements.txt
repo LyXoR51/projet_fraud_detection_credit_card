@@ -1,10 +1,6 @@
 fastapi[standard]
-pydantic 
-typing 
-gunicorn 
-mlflow 
-boto3 
-python-multipart
-pandas==2.2.3
+mlflow==3.8.1
+boto3==1.39.4
+pandas==2.3.3
 scikit-learn==1.5.2
 xgboost==2.1.1
