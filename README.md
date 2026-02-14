@@ -20,7 +20,7 @@ Detect fraudulent transactions in real-time through a robust **FastAPI** API and
 
 ```
 Mono-repo GitHub (automated deployment)
-├── fastapi/           → Auto-sync HF FastAPI Space
+├── FastAPI/           → Auto-sync HF FastAPI Space
 ├── streamlit/         → Auto-sync HF Streamlit Space
 └── .github/workflows/ → Dedicated workflows per service
 
@@ -86,7 +86,7 @@ jobs:
 
 ```bash
 git clone https://github.com/LyXoR51/projet_fraud_detection_credit_card.git
-cd fastapi && docker build -t fraud-api .
+cd FastAPI && docker build -t fraud-api .
 cd ../streamlit && docker build -t fraud-dashboard .
 ```
 
