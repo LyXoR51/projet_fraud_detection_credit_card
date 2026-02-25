@@ -1,3 +1,11 @@
+# GCP CREDENTIAL for HF SPACE
+import os
+if "GCP_KEY" in os.environ:
+    with open("/tmp/gcp_key.json", "w") as f:
+        f.write(os.environ["GCP_KEY"])
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/tmp/gcp_key.json"
+
+### LIBRARIES ###
 import pandas as pd
 import mlflow.sklearn
 import mlflow
@@ -5,8 +13,9 @@ from pydantic import BaseModel
 from typing import Union
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
-import os 
 
+
+### APP ###
 app = FastAPI(title="Automatic Fraud Detection")
 MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI")
 

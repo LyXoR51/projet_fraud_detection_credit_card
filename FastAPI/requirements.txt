@@ -1,6 +1,6 @@
 fastapi[standard]
-mlflow==3.8.1
-boto3==1.39.4
+mlflow==3.9.0
 pandas==2.3.3
-scikit-learn==1.5.2
+scikit-learn==1.8.0
 xgboost==2.1.1
+google-cloud-storage
